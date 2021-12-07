@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task 1</title>
+</head>
+<body>
+   <h1>Vesting Calculation</h1>
+   <form>
+      <label for="grantQty">Grant Qty. :</label>
+      <input type="text" name="" id="grantQty">
+      <br><br>
+      <label for="vestPeriod">Vesting period (in months):</label>
+      <input type="text" name="" id="vestPeriod">
+      <br><br>
+      <label for="vestFrequency">Vesting Frequency :</label>
+      <select name="vestFrequency" id="vestFrequency">
+         <option value=1>Monthly</option>
+         <option value=3>Quarterly</option>
+         <option value=6>Half-Yearly</option>
+         <option value=12>Yearly</option>
+      </select>
+      <br><br>
+      <label for="cliff">Cliff/Offset (in months):</label>
+      <input type="text" name="" id="cliff">
+      <br><br>
+      <label for="vestPercent">1st Vest % :</label>
+      <input type="text" name="" id="vestPercent">
+      <br><br>
+      <label for="grantDate">Grant Date :</label>
+      <input type="date" name="" id="grantDate">
+      <br><br>
+      <input type="button" value="Submit" onclick="Calculate()">
+   </form>
+
+   <br><br>
+   <div id="tableBody"></div>
+</body>
+<script src="Vesting.js"></script>
+</html>
